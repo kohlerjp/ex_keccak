@@ -64,7 +64,7 @@ defmodule ExKeccak.MixProject do
     [
       {:ex_doc, "~> 0.21", only: :dev, runtime: false},
       {:benchee, "~> 1.0.1", only: :test},
-      {:rustler, "~> 0.21.1"}
+      {:rustler, git: "git://github.com/rusterlium/rustler.git", branch: "master", sparse: "rustler_mix"},
     ]
   end
 end
